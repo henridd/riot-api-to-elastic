@@ -115,7 +115,8 @@ namespace RiotApiToElasticExporter.Elasticsearch
                         .IntegerNumber(m => m.PlayerWardsPlaced)
                         .Boolean(m => m.GameEndedInEarlySurrender)
                         .Boolean(m => m.GameEndedInSurrender)
-                        .Boolean(m => m.Win)));
+                        .Boolean(m => m.Win)
+                        .IntegerNumber(m => m.PlayerKills)));
 
             _elasticsearchClient.Indices.Create(createIndexRequest);
         }

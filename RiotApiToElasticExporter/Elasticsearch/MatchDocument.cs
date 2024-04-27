@@ -118,6 +118,7 @@ namespace RiotApiToElasticExporter.Elasticsearch
             PlayerVisionWardsBoughtInGame = participant.VisionWardsBoughtInGame;
             PlayerWardsKilled = participant.WardsKilled;
             PlayerWardsPlaced = participant.WardsPlaced;
+            PlayerKills = participant.Kills;
         }
 
         public string Id { get; set; }
@@ -162,6 +163,7 @@ namespace RiotApiToElasticExporter.Elasticsearch
         public int PlayerInhibitorTakedowns { get; set; }
         public int PlayerInhibitorsLost { get; set; }        
         public int PlayerItemsPurchased { get; set; }
+        public int PlayerKills { get; set; }
         public int PlayerKillingSprees { get; set; }
         public int PlayerLargestMultiKill { get; set; }
         public int PlayerLongestTimeSpentLiving { get; set; }

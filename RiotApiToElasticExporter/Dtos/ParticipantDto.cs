@@ -99,6 +99,7 @@
         public int WardsKilled { get; set; }
         public int WardsPlaced { get; set; }
         public bool Win { get; set; }
+        public int Kills { get; set; }
 
     }
 }
